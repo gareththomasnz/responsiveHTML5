@@ -1,3 +1,9 @@
+/*-------------------------------------------*/
+/*----------------basic setup----------------*/
+/*-------------------------------------------*/
+
+/* orange color  #e67e22 */
+
 *{
     margin: 0;
     padding: 0;
@@ -11,23 +17,14 @@ html{
     font-weight:300px;
     text-rendering: optimizeLegibility;
 }
+/*-------------------------------------------*/
+/*------------reusable components------------*/
+/*-------------------------------------------*/
 .row{
     max-width:1040px;
     margin: 0 auto;
 }
-header{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("./images/hero.jpg");
-    background-size: cover;
-    background-position: center;
-    height:100vh;
-}
-.hero-text-box{
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+/*----------------headings----------------*/
 h1{
     margin-top:0;
     margin-bottom:20px;
@@ -38,6 +35,7 @@ h1{
     letter-spacing:1px;
     word-spacing:4px;
 }
+/*----------------buttons----------------*/
 .btn:link,.btn:visited{
     display:inline-block;
     padding:10px 30px;
@@ -68,5 +66,51 @@ h1{
     border:1px solid #cf6d17;
     color:white;
 }
+/*-------------------------------------------*/
+/*------------------header-------------------*/
+/*-------------------------------------------*/
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("./images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+}
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo{
+    height:100px;
+    width:auto;
+    float:left;
+    margin-top:20px;
+}
+.main-nav{
+    float:right;
+    list-style:none;
+    margin-top:60px;
+}
+.main-nav li{
+    display:inline-block;
+    margin-left:40px;
+}
+.main-nav li a:link,.main-nav li a:visited{
+    padding: 8px 0;
+    color:white;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:90%;
+    border-bottom:2px solid transparent;
+    transition:border-bottom 0.2s;
+}
+.main-nav li a:hover,.main-nav li a:active{
+    border-bottom:2px solid #e67e22;
+    
+}
+
+
 
 
