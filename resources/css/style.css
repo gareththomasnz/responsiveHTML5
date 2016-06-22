@@ -215,6 +215,30 @@ header{
     border-bottom:2px solid #e67e22;
     
 }
+
+/*-------------------------------------------*/
+/*-------------mobile navigation-------------*/
+/*-------------------------------------------*/
+
+.mobile-nav-icon {
+
+	float: right;
+	margin-top: 30px;
+	cursor: pointer;
+	display: none;
+        border-bottom:none;
+}
+
+.mobile-nav-icon:hover {
+        border-bottom:none;
+}
+
+.mobile-nav-icon i {
+	font-size: 200%;
+	color: #fff;
+}
+
+
 /*-------------------------------------------*/
 /*--------------sticky nav-----------------*/
 /*-------------------------------------------*/
@@ -562,4 +586,35 @@ footer p{
     color:#888;
     text-align:center;
     margin-top:20px;
+}
+
+/*-------------------------------------------*/
+/*----------------animation------------------*/
+/*-------------------------------------------*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+	opacity: 0;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+	opacity: 1;
+}
+
+.js--wp-4 {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+.js--wp-5 {
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+}
+.js--wp-6 {
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
 }
